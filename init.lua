@@ -18,8 +18,23 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
-
+  -- colorscheme = "astrodark",
+  -- colorscheme = "nightcity",
+  -- colorscheme = "evergarden",
+  -- colorscheme = "tokyodark",
+  -- colorscheme = "solarized-osaka",
+  colorscheme = "embark",
+  -- colorscheme = "nordic",
+  -- colorscheme = "bamboo",
+  -- colorscheme = "dracula",
+  -- colorscheme = "nord",
+  -- colorscheme = "tokyonight",
+  -- colorscheme = "rose-pine",
+  -- colorscheme = "catppuccin",
+  -- colorscheme = "catppuccin-mocha",
+  -- colorscheme = "sonokai",
+  -- colorscheme = "aurora",
+  -- colorscheme = "ayu",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -37,11 +52,15 @@ return {
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
+          "rust",
+          "zig",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
+        "rust_analyzer",
+        "zls",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
