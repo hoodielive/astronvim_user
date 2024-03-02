@@ -13,7 +13,6 @@ return {
   "Shatur/neovim-ayu",
   "lunarvim/horizon.nvim",
   "folke/tokyonight.nvim",
-  {"rose-pine/neovim", name = "rose-pine"},
   "marko-cerovac/material.nvim",
   "sainnhe/sonokai",
   "ribru17/bamboo.nvim",
@@ -30,7 +29,19 @@ return {
   "xero/miasma.nvim",
   "sonjiku/yawnc.nvim",
   "folke/zen-mode.nvim",
-  "m4xshen/hardtime.nvim",
+  {"m4xshen/hardtime.nvim", 
+    dependencies={"MunifTanjim/nui.nvim", 
+      "nvim-lua/plenary.nvim"},
+    opts= {}
+  },
   "mattn/webapi-vim",
   "embark-theme/vim",
+  {"folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim"},
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use default settings
+      -- refer to the configuration section below.
+    }
+  },
 }
